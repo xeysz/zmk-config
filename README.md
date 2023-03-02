@@ -19,6 +19,8 @@ After the copy is finished, the drive will automatically unmount. Some desktop
 environments will complain about the drive not being safely ejected. That is
 not a problem.
 
+[Reference documentation](https://zmk.dev/docs/user-setup)
+
 ## Building locally
 
 This is currently for a sofle choc using 
@@ -36,3 +38,5 @@ end
 cp build/left/zephyr/zmk.uf2 NICENANO_MOUNTPOINT
 cp build/right/zephyr/zmk.uf2 NICENANO_MOUNTPOINT
 ```
+
+[Reference documentation](https://zmk.dev/docs/development/setup)
