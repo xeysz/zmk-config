@@ -50,7 +50,7 @@
                  &mt LCTRL GRAVE    &kp LALT &kp LGUI  &kp SPACE  &kp SPOTLGT   &kp RET   &mo NAV  &mo SYM  &mo FN    &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp LWRKSPC RWRKSPC &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LWRKSPC RWRKSPC &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         gaming_layer {
@@ -62,7 +62,7 @@
                 &trans  &kp LCTRL  &kp LALT  &trans  &trans         &trans       &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LWRKSPC RWRKSPC &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         fn_layer {
