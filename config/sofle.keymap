@@ -50,6 +50,7 @@
                  &mt LCTRL GRAVE    &kp LALT &kp LGUI  &kp SPACE  &kp SPOTLGT   &kp RET   &mo NAV  &mo SYM  &mo FN    &kp RCTRL
             >;
 
+            // format is &inc_dep_kp counter-clockwise-action clockwise-action ...
             sensor-bindings = <&inc_dec_kp LWRKSPC RWRKSPC &inc_dec_kp PG_UP PG_DN>;
         };
 
@@ -91,11 +92,11 @@
 
         nav_layer {
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                              &tog GAME &trans    &trans   &trans    &trans     &kp CLCK
-&trans     &trans       &trans       &trans       &trans       &trans                                    &trans    &kp HOME  &kp UP   &kp END   &kp PSCRN  &trans
-&kp DEL    &trans       &trans       &trans       &trans       &trans                                    &trans    &kp LEFT  &kp DOWN &kp RIGHT &trans     &trans
-&trans     &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans        &kp C_SLEEP_MODE &kp C_MUTE &trans    &kp PG_UP &trans   &kp PG_DN &trans     &trans
-                        &trans       &trans       &trans       &trans        &trans           &trans     &trans    &trans    &trans   &trans
+&bt BT_CLR      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                              &tog GAME &trans    &trans   &trans    &trans     &kp CLCK
+&out OUT_TOG    &trans       &trans       &trans       &trans       &trans                                    &trans    &kp HOME  &kp UP   &kp END   &kp PSCRN  &trans
+&kp DEL         &trans       &trans       &trans       &trans       &trans                                    &trans    &kp LEFT  &kp DOWN &kp RIGHT &trans     &trans
+&trans          &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &trans        &kp C_SLEEP_MODE &kp C_MUTE &trans    &kp PG_UP &trans   &kp PG_DN &trans     &trans
+                             &trans       &trans       &trans       &trans        &trans           &trans     &trans    &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
